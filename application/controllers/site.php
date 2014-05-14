@@ -3,7 +3,7 @@
 class Site extends CI_Controller {
 
   function __construct() {
-    parent::CI_Controller();
+    parent::__construct();
     $this->is_logged_in();
   }
 
@@ -16,6 +16,7 @@ class Site extends CI_Controller {
 
     if(!isset($is_logged_in) || $is_logged_in != true) {
       echo 'You don\'t have permission to access this page. <a href="../login">Login</a>';
+      $this->load->view('login_form');
     }
   }
 }

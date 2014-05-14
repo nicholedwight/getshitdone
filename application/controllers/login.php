@@ -41,7 +41,7 @@ class Login extends CI_Controller {
     $this->form_validation->set_rules('password2', 'Password Confirmation', 'trim|required|matches[password]');
 
     if($this->form_validation->run() == FALSE) {
-      $this->signup();
+      $this->register();
     }
     else {
       $this->load->model('membership_model');
@@ -54,5 +54,12 @@ class Login extends CI_Controller {
       }
     }
   }
+
+  function logout()
+	{
+		$this->session->sess_destroy();
+		$this->index();
+	}
+
 }
 ?>

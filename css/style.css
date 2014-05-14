@@ -1,46 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #b6b6b6;
   margin: 0;
   padding: 0;
-  font-family: arial;
+  font-family: "Lato", Helvetica, arial, sans-serif;
 }
 
 #login_form {
   width: 300px;
-  background: #f0f0f0;
-  border: 1px solid white;
-  margin: 250px auto 0;
-  padding: 1em;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
+  background: #edeff1;
+  margin: 180px auto 0;
+  border-radius: 6px;
+  padding: 20px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6spx;
 }
 
 h1,h2,h3,h4,h5 {
   margin-top: 0;
-  font-family: arial black, arial;
+  font-family: "Lato", Helvetica, arial black, arial;
   text-align: center;
 }
 
 input[type=text], input[type=password] {
-  display: block;
-  margin: 0 0 1em 0;
-  width: 280px;
-  border: 5px;
-  -moz-border-radius: 1px;
-  -webkit-border-radius: 1px;
-  padding: 1em
+  border: 2px solid #bdc3c7;
+  color: #34495e;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  line-height: 2;
+  width: 100%;
+  text-indent: 5px;
+  margin-bottom: 10px;
+  border-radius: 6px;
 }
 
 input[type=submit], form a {
   border: none;
+  margin-top: 20px;
   margin-right: 1em;
-  padding: 6px;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
   text-decoration: none;
   font-size: 12px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  background: #348075;
-  color: white;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  background: #1abc9c;
+  color: #FFF;
 }
 
 input[type=submit]:hover, form a:hover {

@@ -8,7 +8,8 @@ class Site extends CI_Controller {
   }
 
   function members_area() {
-    $this->load->view('members_area');
+    $data['main_content'] = 'members_area';
+    $this->load->view('includes/template', $data);
   }
 
   function is_logged_in() {

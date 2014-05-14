@@ -3,7 +3,7 @@
 }
 
 body {
-  background: #1abc9c;
+  background-image: url('../img/bkg-9.jpg');
   margin: 0;
   padding: 0;
   font-family: "Lato", Helvetica, arial, sans-serif;
@@ -19,10 +19,15 @@ body {
   -webkit-border-radius: 6spx;
 }
 
+#login_form h1, .register h3 {
+  color: #000;
+}
+
 h1,h2,h3,h4,h5 {
   margin-top: 0;
   font-family: "Lato", Helvetica, arial black, arial;
   text-align: center;
+  color: #FFF;
 }
 
 input[type=text], input[type=password] {
@@ -53,7 +58,7 @@ input[type=submit], form a {
 }
 
 input[type=submit]:hover, form a:hover {
-  background: #287368;
+  background: #19B596;
   cursor: pointer;
 }
 
@@ -77,4 +82,30 @@ input[type=submit]:hover, form a:hover {
   right: 0;
   margin-right: 10px;
   top: 0;
+  color: #FFF;
+}
+
+#login-register-redirect a {
+  color: #1abc9c;
+}
+
+#login-register-redirect a:hover {
+  color: #FFF;
+}
+
+.logout-button a {
+  color: #FFF;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 5px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 10px 10px 0 0;
+}
+
+.logout-button a:hover {
+  color: #000;
+  background: #FFF;
 }

@@ -26,5 +26,5 @@
 </form>
 
 <div id="login-register-redirect">
-  <p>Already have an account?<a href="login/login">Login</a></p>
+  <p>Already have an account? <a href="login/login">Login</a></p>
 </div>

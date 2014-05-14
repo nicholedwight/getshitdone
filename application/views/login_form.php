@@ -6,5 +6,7 @@
   echo form_password('password', 'Password');
   echo form_submit('submit', 'Login');
   echo anchor('login/register', 'Create Account');
+
+  // echo md5('bumface');
   ?>
 </div>

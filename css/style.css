@@ -124,6 +124,16 @@ input[type=submit]:hover, form a:hover {
   width: 15%;
 }
 
+.category-list {
+  list-style: none;
+}
+
+.category-list a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 1.2em;
+}
+
 .list {
   background: #FFF;
   border-radius: 6px;

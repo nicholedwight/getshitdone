@@ -3,13 +3,19 @@
   <h4><?php echo anchor('login/logout', 'Logout'); ?></h4>
 </div>
    <div class="categories">
-    <h2>TEST</h2>
+    <h1>Your Lists</h1>
     <?php
     foreach ($categories as $category) {
-      echo $category->name;
+    ?>
+      <ul class="category-list">
+        <li><a href="#">
+          <?php echo $category->name; ?>
+        </a></li>
+      </ul>
+    <?php
     }
     ?>
-    <p><a id="new-cat-button" href="#">New Category</a></p>
+    <p><a id="new-cat-button" href="#">Add Category</a></p>
     <div id="new_category">
       <?php
       echo form_open('category_controller/input');

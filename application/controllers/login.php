@@ -11,9 +11,11 @@ class Login extends CI_Controller {
     $query = $this->membership_model->validate();
 
     if($query) {
+      $user_id = $this->membership_model->get_userID($this->input->post('username'));
       $data = array(
         'username' => $this->input->post('username'),
-        'is_logged_in' => true
+        'is_logged_in' => true,
+        'user_id' => $user_id
       );
 
       $this->session->set_userdata($data);

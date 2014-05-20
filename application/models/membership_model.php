@@ -1,4 +1,5 @@
 <?php
+
 class Membership_model extends CI_Model {
   function validate() {
     $this->db->where('username', $this->input->post('username'));
@@ -21,6 +22,17 @@ class Membership_model extends CI_Model {
 
     $insert = $this->db->insert('users', $new_member_insert_data);
     return $insert;
+  }
+
+  function get_userID($username){
+  $this->db->where('username',$username);
+  $query = $this->db->get('users');
+  foreach ($query->result() as $row)
+      {
+          $user_id = $row->id;
+      }
+      return $user_id;
+
   }
 }
 ?>

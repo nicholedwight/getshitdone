@@ -10,7 +10,7 @@
       echo form_open('category_controller/input');
       echo form_label('Name', 'category_name');
       echo form_input('category_name', '');
-      echo form_hidden('user_id', '$this->session->userdata("user_id")')
+      echo form_hidden('user_id', $this->session->userdata('user_id'));
 
       echo form_submit('submit', 'Submit');
       ?>

@@ -23,6 +23,8 @@ class Category extends CI_Model {
       $this->db->insert('categories', $category);
     }
 
+    
+
 }
 
 ?>

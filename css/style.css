@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Lato", Helvetica, arial, sans-serif;
+  color: #FFF;
 }
 
 #login_form {
@@ -27,7 +28,6 @@ h1,h2,h3,h4,h5 {
   margin-top: 0;
   font-family: "Lato", Helvetica, arial black, arial;
   text-align: center;
-  color: #FFF;
 }
 
 input[type=text], input[type=password] {
@@ -113,4 +113,47 @@ input[type=submit]:hover, form a:hover {
 .logout-button a:hover {
   color: #000;
   background: #FFF;
+}
+
+.categories {
+  border: 1px solid white;
+  float: left;
+  margin-top: 20px;
+  margin-left: 5px;
+  height: 100%;
+  width: 15%;
+}
+
+.list {
+  background: #FFF;
+  border-radius: 6px;
+  height: 100%;
+  margin-top: 20px;
+  margin-left:16%;
+  width: 70%;
+  color: #000;
+}
+
+#new_category {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+#new-cat-button {
+  color: #FFF;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 21%;
+}
+
+#new-cat-button:hover {
+  color: #000;
+  background: #FFF;
+}
+
+.hidden {
+  display: none;
 }

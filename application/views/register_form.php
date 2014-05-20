@@ -1,5 +1,5 @@
 <h1>Create an Account</h1>
-<form class="register">
+<fieldset class="register">
   <h3>Personal Information</h3>
   <?php
   echo form_open('login/create_member');
@@ -23,7 +23,7 @@
   ?>
 
   <?php echo validation_errors('<p class="error">'); ?>
-</form>
+</fieldset>
 
 <div id="login-register-redirect">
   <p>Already have an account? <a href="login/login">Login</a></p>

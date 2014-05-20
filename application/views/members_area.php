@@ -15,7 +15,7 @@
     <?php
     }
     ?>
-    <p><a id="new-cat-button" href="#">Add Category</a></p>
+    <p><a href="#" class="icon-plus19" style=""></a></p>
     <div id="new_category">
       <?php
       echo form_open('category_controller/input');

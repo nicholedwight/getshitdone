@@ -150,13 +150,23 @@ input[type=submit]:hover, form a:hover {
   padding-bottom: 10px;
 }
 
-#new-cat-button {
+/*#new-cat-button {
   color: #FFF;
   text-decoration: none;
   border: 1px solid white;
   padding: 5px;
   border-radius: 5px;
   margin-left: 21%;
+}*/
+
+.icon-plus19 {
+  width: 37px;
+  height: 37px;
+  background-size: contain;
+  display: block;
+  margin-left: 21%;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%20%3C%21--%20Generator%3A%20IcoMoon.io%20--%3E%20%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%20%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2248px%22%20height%3D%2248px%22%20viewBox%3D%220%200%2048%2048%22%20enable-background%3D%22new%200%200%2016%2016%22%20xml%3Aspace%3D%22preserve%22%20fill%3D%22%23000000%22%3E%20%3Cpath%20d%3D%22M%2039.00%2C48.00L9.00%2C48.00%20c-4.971%2C0.00-9.00-4.032-9.00-9.00L0.00%2C9.00%20c0.00-4.971%2C%204.029-9.00%2C%209.00-9.00l30.00%2C0.00%20c%204.971%2C0.00%2C%209.00%2C4.029%2C%209.00%2C9.00l0.00%2C30.00%20C%2048.00%2C43.968%2C%2043.971%2C48.00%2C%2039.00%2C48.00z%20M%2042.00%2C9.00c0.00-1.656-1.341-3.00-3.00-3.00L9.00%2C6.00%20C%207.341%2C6.00%2C%206.00%2C7.344%2C%206.00%2C9.00l0.00%2C30.00%20c0.00%2C1.659%2C%201.341%2C3.00%2C%203.00%2C3.00l30.00%2C0.00%20c%201.659%2C0.00%2C%203.00-1.341%2C%203.00-3.00L42.00%2C9.00%20z%20M%2033.00%2C27.00L27.00%2C27.00%20l0.00%2C6.00%20c0.00%2C1.659-1.341%2C3.00-3.00%2C3.00s-3.00-1.341-3.00-3.00L21.00%2C27.00%20L15.00%2C27.00%20C%2013.341%2C27.00%2C%2012.00%2C25.656%2C%2012.00%2C24.00s%201.341-3.00%2C%203.00-3.00l6.00%2C0.00%20L21.00%2C15.00%20c0.00-1.656%2C%201.341-3.00%2C%203.00-3.00%20s%203.00%2C1.344%2C%203.00%2C3.00l0.00%2C6.00%20l6.00%2C0.00%20c%201.659%2C0.00%2C%203.00%2C1.344%2C%203.00%2C3.00S%2034.659%2C27.00%2C%2033.00%2C27.00z%22%20%3E%3C/path%3E%3C/svg%3E');
+  background-repeat: no-repeat;
 }
 
 #new-cat-button:hover {

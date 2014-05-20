@@ -4,6 +4,11 @@
 </div>
    <div class="categories">
     <h2>TEST</h2>
+    <?php
+    foreach ($categories as $category) {
+      echo $category->name;
+    }
+    ?>
     <p><a id="new-cat-button" href="#">New Category</a></p>
     <div id="new_category">
       <?php

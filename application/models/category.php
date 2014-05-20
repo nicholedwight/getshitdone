@@ -2,13 +2,10 @@
 
 class Category extends CI_Model {
 
-    function getCategory() {
+    function getCategory($user_id) {
       $this->db->where('name', $this->input->post('category_name'));
-      $catquery = $this->db->get('categories');
-
-      if($query->num_rows == 1) {
-        return true;
-      }
+      $catquery = $this->db->get_where('categories', array('user_id' => $user_id));
+      return $catquery->result();
     }
 
     function create_category() {
@@ -23,7 +20,7 @@ class Category extends CI_Model {
       $this->db->insert('categories', $category);
     }
 
-    
+
 
 }
 

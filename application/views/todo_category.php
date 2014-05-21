@@ -33,11 +33,10 @@
   <div class="list">
     <h2>List test</h2>
     <?php
-    echo $category_id;
     foreach ($todos as $todo) {
     ?>
       <ul>
-        <li><?php var_dump($todo) ?></li>
+        <li><?php echo $todo->name; ?></li>
       </ul>
     <?php
     }

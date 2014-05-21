@@ -15,7 +15,8 @@ class Site extends CI_Controller {
     $data['main_content'] = 'members_area';
     $data['user_id'] = membership_model::get_userID($this->session->userdata('username'));
     $data['categories'] = $this->category->getCategory($data['user_id']);
-    $data['list_items'] = $this->todo->getListItemsByCategory($data['user_id']);
+    $data['list_items'] = $this->todo->getListItems($data['user_id']);
+    $data['cat_id'] = $this->todo->getItemsByCategory();
     $this->load->view('includes/template', $data);
   }
 
@@ -27,6 +28,8 @@ class Site extends CI_Controller {
       $this->load->view('login_form');
     }
   }
+
+  
 
 
 

@@ -19,7 +19,7 @@
     <p><a href="#" class="icon-plus19"></a></p>
     <div id="new_category">
       <?php
-      echo form_open('category_controller/i-nput');
+      echo form_open('category_controller/input');
       echo form_label('Name', 'category_name');
       echo form_input('category_name', '');
       echo form_hidden('user_id', $this->session->userdata('user_id'));
@@ -33,10 +33,11 @@
   <div class="list">
     <h2>List test</h2>
     <?php
-    foreach ($list_items as $item) {
+    echo $category_id;
+    foreach ($cat_id as $cat_item) {
     ?>
       <ul>
-        <li><?php echo $item->name; ?></li>
+        <li><?php echo $cat_item->name; ?></li>
       </ul>
     <?php
     }

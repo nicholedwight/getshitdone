@@ -116,7 +116,6 @@ input[type=submit]:hover, form a:hover {
 }
 
 .categories {
-  border: 1px solid white;
   float: left;
   margin-top: 20px;
   margin-left: 5px;
@@ -126,6 +125,24 @@ input[type=submit]:hover, form a:hover {
 
 .category-list {
   list-style: none;
+  padding-left: 15%;
+}
+
+.category-list li {
+  border-radius: 4px;
+  background-color: #1ABC9C;
+  color: #FFF;
+  font-size: 14px;
+  display: inline-block;
+  padding: 6px 13px 6px 13px;
+}
+
+.category-list li:hover {
+  display: inline-block;
+  overflow: hidden;
+  padding: 6px 20px 8px 12px;
+  -webkit-transition: 0.25s linear;
+  transition: 0.25s linear;
 }
 
 .category-list a {
@@ -142,6 +159,7 @@ input[type=submit]:hover, form a:hover {
   margin-left:16%;
   width: 70%;
   color: #000;
+  position: relative;
 }
 
 #new_category, #new_list_item {
@@ -155,9 +173,22 @@ input[type=submit]:hover, form a:hover {
   height: 37px;
   background-size: contain;
   display: block;
-  margin-left: 21%;
+  margin-left: 15%;
   background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%20%3C%21--%20Generator%3A%20IcoMoon.io%20--%3E%20%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%20%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2248px%22%20height%3D%2248px%22%20viewBox%3D%220%200%2048%2048%22%20enable-background%3D%22new%200%200%2016%2016%22%20xml%3Aspace%3D%22preserve%22%20fill%3D%22%23000000%22%3E%20%3Cpath%20d%3D%22M%2039.00%2C48.00L9.00%2C48.00%20c-4.971%2C0.00-9.00-4.032-9.00-9.00L0.00%2C9.00%20c0.00-4.971%2C%204.029-9.00%2C%209.00-9.00l30.00%2C0.00%20c%204.971%2C0.00%2C%209.00%2C4.029%2C%209.00%2C9.00l0.00%2C30.00%20C%2048.00%2C43.968%2C%2043.971%2C48.00%2C%2039.00%2C48.00z%20M%2042.00%2C9.00c0.00-1.656-1.341-3.00-3.00-3.00L9.00%2C6.00%20C%207.341%2C6.00%2C%206.00%2C7.344%2C%206.00%2C9.00l0.00%2C30.00%20c0.00%2C1.659%2C%201.341%2C3.00%2C%203.00%2C3.00l30.00%2C0.00%20c%201.659%2C0.00%2C%203.00-1.341%2C%203.00-3.00L42.00%2C9.00%20z%20M%2033.00%2C27.00L27.00%2C27.00%20l0.00%2C6.00%20c0.00%2C1.659-1.341%2C3.00-3.00%2C3.00s-3.00-1.341-3.00-3.00L21.00%2C27.00%20L15.00%2C27.00%20C%2013.341%2C27.00%2C%2012.00%2C25.656%2C%2012.00%2C24.00s%201.341-3.00%2C%203.00-3.00l6.00%2C0.00%20L21.00%2C15.00%20c0.00-1.656%2C%201.341-3.00%2C%203.00-3.00%20s%203.00%2C1.344%2C%203.00%2C3.00l0.00%2C6.00%20l6.00%2C0.00%20c%201.659%2C0.00%2C%203.00%2C1.344%2C%203.00%2C3.00S%2034.659%2C27.00%2C%2033.00%2C27.00z%22%20%3E%3C/path%3E%3C/svg%3E');
   background-repeat: no-repeat;
+}
+
+.add-icon {
+  text-decoration: none;
+  color: #000;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px 10px 0 0;
 }
 
 .hidden {

@@ -30,7 +30,7 @@
 
   <div class="list">
     <h2>List test</h2>
-    <p><a href="#" class="add-icon">Add Item</a></p>
+    <p><a href="#" class="add-icon">+ Add Item</a></p>
     <div id="new_list_item">
       <?php
       echo form_open('todo_controller/input');

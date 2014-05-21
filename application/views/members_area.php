@@ -15,7 +15,7 @@
     <?php
     }
     ?>
-    <p><a href="#" class="icon-plus19" style=""></a></p>
+    <p><a href="#" class="icon-plus19"></a></p>
     <div id="new_category">
       <?php
       echo form_open('category_controller/input');
@@ -30,4 +30,16 @@
 
   <div class="list">
     <h2>List test</h2>
+    <p><a href="#" class="add-icon">Add Item</a></p>
+    <div id="new_list_item">
+      <?php
+      echo form_open('todo_controller/input');
+      echo form_label('To do:', 'todo_name');
+      echo form_input('todo_name', '');
+      echo form_hidden('user_id', $this->session->userdata('user_id'));
+      echo form_hidden('category_id', $category_id);
+
+      echo form_submit('submit', 'Submit');
+      ?>
+    </div>
   </div>

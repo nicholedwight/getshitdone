@@ -35,9 +35,7 @@
     foreach ($list_items as $item) {
     ?>
       <ul>
-        <li><a href="#">
-          <?php echo $item->name; ?>
-        </a></li>
+        <li><?php echo $item->name; ?></li>
       </ul>
     <?php
     }
@@ -49,8 +47,13 @@
       echo form_label('To do:', 'todo_name');
       echo form_input('todo_name', '');
       echo form_hidden('user_id', $this->session->userdata('user_id'));
-      // echo form_hidden('category_id', $category_id);
+      $cats = [];
 
+      foreach($categories as $category) {
+        $cats[$category->id] = $category->name;
+      }
+
+      echo form_dropdown('list_categories', $cats);
       echo form_submit('submit', 'Submit');
       ?>
     </div>

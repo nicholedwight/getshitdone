@@ -7,7 +7,6 @@ class Todo_Controller extends CI_Controller {
 
   }
 
-
   function input() {
     $this->load->helper('form');
     $this->load->model('todo');

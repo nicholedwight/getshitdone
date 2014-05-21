@@ -22,6 +22,7 @@ class Todo_Controller extends CI_Controller {
     $data['main_content'] = 'todo_category';
     $data['user_id'] = membership_model::get_userID($this->session->userdata('username'));
     $data['category_id'] = $this->uri->segment(3);
+    $data['todos'] = todo::getListItemsByUserIdAndCategory($data['user_id'], $data['category_id']);
 
     $data['categories'] = $this->category->getCategory($data['user_id']); //fix
     $data['list_items'] = todo::getListItems($data['user_id']);

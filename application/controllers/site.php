@@ -16,7 +16,6 @@ class Site extends CI_Controller {
     $data['user_id'] = membership_model::get_userID($this->session->userdata('username'));
     $data['categories'] = $this->category->getCategory($data['user_id']);
     $data['list_items'] = $this->todo->getListItems($data['user_id']);
-    $data['cat_id'] = $this->todo->getItemsByCategory();
     $this->load->view('includes/template', $data);
   }
 

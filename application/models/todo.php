@@ -13,7 +13,7 @@ class Todo extends CI_Model {
       'user_id' => $user_id,
       'cat_id' => $category_id
     );
-    $query = $this->db->where($query_conditions);
+    $query = $this->db->get_where('todo', $query_conditions);
     return $query->result();
   }
 

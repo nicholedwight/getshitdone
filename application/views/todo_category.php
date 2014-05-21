@@ -34,10 +34,10 @@
     <h2>List test</h2>
     <?php
     echo $category_id;
-    foreach ($cat_id as $cat_item) {
+    foreach ($todos as $todo) {
     ?>
       <ul>
-        <li><?php echo $cat_item->name; ?></li>
+        <li><?php var_dump($todo) ?></li>
       </ul>
     <?php
     }

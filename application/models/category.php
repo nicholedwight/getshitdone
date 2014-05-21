@@ -12,7 +12,6 @@ class Category extends CI_Model {
       $this->load->database();
       $name = $this->input->post('category_name');
       $user_id = $this->input->post('user_id');
-      // die(var_dump($this->input->post('category_name')));
       $category = array(
         'name' => $name,
         'user_id' => $user_id

@@ -1,4 +1,4 @@
-<h2>Welcome Back, <?php echo $this->session->userdata('username'); ?>!</h2>
+<h2 id="welcome-heading">Get Shit Done, <?php echo $this->session->userdata('username'); ?>!</h2>
 <div class="logout-button">
   <h4><?php echo anchor('login/logout', 'Logout'); ?></h4>
 </div>
@@ -24,12 +24,24 @@
       echo form_hidden('user_id', $this->session->userdata('user_id'));
 
       echo form_submit('submit', 'Submit');
+      echo form_close('');
       ?>
     </div>
  </div>
 
   <div class="list">
     <h2>List test</h2>
+    <?php
+    foreach ($list_items as $item) {
+    ?>
+      <ul>
+        <li><a href="#">
+          <?php echo $item->name; ?>
+        </a></li>
+      </ul>
+    <?php
+    }
+    ?>
     <p><a href="#" class="add-icon">+ Add Item</a></p>
     <div id="new_list_item">
       <?php
@@ -37,7 +49,7 @@
       echo form_label('To do:', 'todo_name');
       echo form_input('todo_name', '');
       echo form_hidden('user_id', $this->session->userdata('user_id'));
-      echo form_hidden('category_id', $category_id);
+      // echo form_hidden('category_id', $category_id);
 
       echo form_submit('submit', 'Submit');
       ?>

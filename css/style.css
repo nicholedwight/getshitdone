@@ -10,6 +10,10 @@ body {
   color: #FFF;
 }
 
+#welcome-heading {
+  padding-top: 10px;
+}
+
 #login_form {
   width: 300px;
   background: #edeff1;
@@ -162,10 +166,15 @@ input[type=submit]:hover, form a:hover {
   position: relative;
 }
 
-#new_category, #new_list_item {
+#new_category {
   width: 90%;
   margin: 0 auto;
   padding-bottom: 10px;
+}
+
+#new_list_item {
+  width: 40%;
+  margin: 0 auto;
 }
 
 .icon-plus19 {

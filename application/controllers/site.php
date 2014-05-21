@@ -8,12 +8,14 @@ class Site extends CI_Controller {
 
     $this->load->model('category');
     $this->load->model('membership_model');
+    $this->load->model('todo');
   }
 
   function members_area() {
     $data['main_content'] = 'members_area';
     $data['user_id'] = membership_model::get_userID($this->session->userdata('username'));
     $data['categories'] = $this->category->getCategory($data['user_id']);
+    $data['list_items'] = $this->todo->getListItems($data['user_id']);
     $this->load->view('includes/template', $data);
   }
 

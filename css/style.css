@@ -142,14 +142,6 @@ input[type=submit]:hover, form a:hover {
   margin-bottom: 10px;
 }
 
-.category-list li:hover {
-  display: inline-block;
-  overflow: hidden;
-  padding: 6px 20px 8px 12px;
-  -webkit-transition: 0.25s linear;
-  transition: 0.25s linear;
-}
-
 .category-list a {
   text-decoration: none;
   color: #FFF;

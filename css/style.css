@@ -171,9 +171,23 @@ input[type=submit]:hover, form a:hover {
   min-height: 600px;
   margin-top: 20px;
   margin-left:16%;
-  width: 40%;
+  width: 80%;
   color: #000;
   position: relative;
+}
+
+.list-item {
+  background: #383127;
+  color: #E4DBBF;
+  padding: 15px;
+  width: 250px;
+  display: inline-block;
+  word-wrap: break-word;
+  margin-left: 0.9375rem;
+  margin-right: 0.9375rem;
+  margin-bottom: 15px;
+  line-height: 1.5em;
+  float: left;
 }
 
 #new_category {

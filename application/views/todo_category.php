@@ -33,15 +33,16 @@
 
   <div class="list">
     <h2>List test</h2>
-    <?php
-    foreach ($todos as $todo) {
-    ?>
-      <ul>
-        <li><?php echo $todo->name; ?></li>
-      </ul>
-    <?php
-    }
-    ?>
+
+    <ul class="todo-list-items">
+      <?php
+      foreach ($todos as $todo) {
+      ?>
+          <li class="list-item"><?php echo $todo->name; ?></li>
+      <?php
+      }
+      ?>
+    </ul>
     <p><a href="#" class="add-icon">+ Add Item</a></p>
     <div id="new_list_item">
       <?php

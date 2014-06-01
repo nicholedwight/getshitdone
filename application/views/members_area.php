@@ -9,8 +9,10 @@
     <?php
     foreach ($categories as $category) {
     ?>
-        <li>
+
+        <li id="category-item">
           <?php echo anchor('todo_controller/todo_category/' . $category->id, $category->name); ?>
+          <i class="fi-x delete-category"></i>
         </li>
     <?php
     }
@@ -60,4 +62,3 @@
       ?>
     </div>
   </div>
-  

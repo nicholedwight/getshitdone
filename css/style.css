@@ -153,13 +153,23 @@ input[type=submit]:hover, form a:hover {
   font-size: 1.2em;
 }
 
+.delete-category {
+  color: #FFF;
+  margin-left: 10px;
+  display: none;
+}
+
+#category-item:hover .delete-category {
+  display: inline;
+}
+
 .list {
   background: #FFF;
   border-radius: 6px;
   min-height: 600px;
   margin-top: 20px;
   margin-left:16%;
-  width: 70%;
+  width: 40%;
   color: #000;
   position: relative;
 }

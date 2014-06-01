@@ -135,6 +135,7 @@ input[type=submit]:hover, form a:hover {
 .category-list {
   list-style: none;
   padding-left: 15%;
+  overflow: auto;
 }
 
 .category-list li {
@@ -142,7 +143,8 @@ input[type=submit]:hover, form a:hover {
   background-color: #1ABC9C;
   color: #FFF;
   font-size: 14px;
-  display: inline-block;
+  float: left;
+  clear: left;
   padding: 6px 13px 6px 13px;
   margin-bottom: 10px;
 }
@@ -159,7 +161,7 @@ input[type=submit]:hover, form a:hover {
   display: none;
 }
 
-#category-item:hover .delete-category {
+.category-item:hover .delete-category {
   display: inline;
 }
 

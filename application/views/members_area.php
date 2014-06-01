@@ -10,9 +10,9 @@
     foreach ($categories as $category) {
     ?>
 
-        <li id="category-item">
+        <li class="category-item">
           <?php echo anchor('todo_controller/todo_category/' . $category->id, $category->name); ?>
-          <i class="fi-x delete-category"></i>
+          <a href='<?php echo site_url();?>category_controller/delete/<?php echo $category->id; ?>' class="delete-category"><i class="fi-x"></i></a>
         </li>
     <?php
     }
@@ -21,7 +21,7 @@
     <p><a href="#" class="icon-plus19"></a></p>
     <div id="new_category">
       <?php
-      echo form_open('category_controller/i-nput');
+      echo form_open('category_controller/input');
       echo form_label('Name', 'category_name');
       echo form_input('category_name', '');
       echo form_hidden('user_id', $this->session->userdata('user_id'));
@@ -34,6 +34,7 @@
 
   <div class="list">
     <h2>List test</h2>
+
     <?php
     foreach ($list_items as $item) {
     ?>

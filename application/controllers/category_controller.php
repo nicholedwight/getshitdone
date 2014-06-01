@@ -17,5 +17,11 @@ class Category_Controller extends CI_Controller {
     redirect('site/members_area');
   }
 
+  function delete($category_id) {
+    $this->load->model('category');
+    $this->category->delete_category($this->uri->segment(3));
+    redirect('site/members_area');
+  }
+
 }
 ?>

@@ -9,8 +9,9 @@
     <?php
     foreach ($categories as $category) {
     ?>
-        <li>
+        <li class="category-item">
           <?php echo anchor('todo_controller/todo_category/' . $category->id, $category->name); ?>
+          <a href='<?php echo site_url();?>category_controller/delete/<?php echo $category->id; ?>' class="delete-category"><i class="fi-x"></i></a>
         </li>
     <?php
     }

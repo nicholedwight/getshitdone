@@ -24,7 +24,7 @@ body {
   -webkit-border-radius: 6spx;
 }
 
-#login_form h1, .register h3 {
+#login_form h1, .register h3, #login_form label {
   color: #000;
 }
 
@@ -43,6 +43,7 @@ input[type=text], input[type=password] {
   text-indent: 5px;
   margin-bottom: 10px;
   border-radius: 6px;
+  padding: 5px
 }
 
 input[type=text]:focus, input[type=password]:focus {

@@ -39,7 +39,10 @@
       <?php
       foreach ($list_items as $item) {
       ?>
-          <li class="list-item"><?php echo $item->name; ?></li>
+          <li class="list-item">
+            <a href='<?php echo site_url();?>todo_controller/delete/<?php echo $category->id; ?>' class="todo-hidden"><i class="fi-x"></i></a>
+            <?php echo $item->name; ?>
+          </li>
       <?php
       }
       ?>

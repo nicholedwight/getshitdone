@@ -15,7 +15,7 @@ class Todo_Controller extends CI_Controller {
     if ($this->input->post('submit')) {
       $this->todo->create_list_item();
     }
-    redirect('site/members_area');
+    redirect($_SERVER['HTTP_REFERER']);
   }
 
   function todo_category($id) {
@@ -32,7 +32,7 @@ class Todo_Controller extends CI_Controller {
   function delete($category_id) {
     $this->load->model('todo');
     $this->todo->delete_list_item($this->uri->segment(3));
-    redirect('site/members_area');
+    redirect($_SERVER['HTTP_REFERER']);
   }
 
 }

@@ -29,6 +29,14 @@ class Todo extends CI_Model {
     $q = $this->db->insert('todo', $todo_item);
   }
 
+  function delete_list_item($todo_id) {
+    $this->load->database();
+    $listItem = array(
+      'id' => $todo_id
+    );
+    $this->db->delete('todo', $listItem);
+  }
+
 }
 
 ?>

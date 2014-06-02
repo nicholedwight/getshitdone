@@ -29,5 +29,11 @@ class Todo_Controller extends CI_Controller {
     $this->load->view('includes/template', $data);
   }
 
+  function delete($category_id) {
+    $this->load->model('todo');
+    $this->todo->delete_list_item($this->uri->segment(3));
+    redirect('site/members_area');
+  }
+
 }
 ?>

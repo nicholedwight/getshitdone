@@ -1,37 +1,40 @@
-<h2 id="welcome-heading">Get Shit Done, <?php echo $this->session->userdata('username'); ?>!</h2>
-<div class="logout-button">
-  <h4><?php echo anchor('login/logout', 'Logout'); ?></h4>
-</div>
-   <div class="categories">
-    <h1>Your Lists</h1>
-      <ul class="category-list">
-        <li><?php echo anchor('site/members_area', 'All'); ?></li>
-    <?php
-    foreach ($categories as $category) {
-    ?>
-
-        <li class="category-item">
-          <?php echo anchor('todo_controller/todo_category/' . $category->id, $category->name); ?>
-          <a href='<?php echo site_url();?>category_controller/delete/<?php echo $category->id; ?>' class="delete-category"><i class="fi-x"></i></a>
-        </li>
-    <?php
-    }
-    ?>
-      </ul>
-    <p><a href="#" class="icon-plus19"></a></p>
-    <div id="new_category">
+<sidebar class="left-content">
+  <h2 id="welcome-heading">Get Shit Done, <?php echo $this->session->userdata('username'); ?>!</h2>
+  <div class="logout-button">
+    <h4><?php echo anchor('login/logout', 'Logout'); ?></h4>
+  </div>
+     <div class="categories">
+      <h1>Your Lists</h1>
+        <ul class="category-list">
+          <li><?php echo anchor('site/members_area', 'All'); ?></li>
       <?php
-      echo form_open('category_controller/input');
-      echo form_label('Name', 'category_name');
-      echo form_input('category_name', '');
-      echo form_hidden('user_id', $this->session->userdata('user_id'));
-
-      echo form_submit('submit', 'Submit');
-      echo form_close('');
+      foreach ($categories as $category) {
       ?>
-    </div>
- </div>
 
+          <li class="category-item">
+            <?php echo anchor('todo_controller/todo_category/' . $category->id, $category->name); ?>
+            <a href='<?php echo site_url();?>category_controller/delete/<?php echo $category->id; ?>' class="delete-category"><i class="fi-x"></i></a>
+          </li>
+      <?php
+      }
+      ?>
+        </ul>
+      <p><a href="#" class="icon-plus19"></a></p>
+      <div id="new_category">
+        <?php
+        echo form_open('category_controller/input');
+        echo form_label('Name', 'category_name');
+        echo form_input('category_name', '');
+        echo form_hidden('user_id', $this->session->userdata('user_id'));
+
+        echo form_submit('submit', 'Submit');
+        echo form_close('');
+        ?>
+      </div>
+   </div>
+</sidebar>
+
+<main>
   <div class="list">
     <h2>List test</h2>
 
@@ -66,3 +69,4 @@
       ?>
     </div>
   </div>
+</main>

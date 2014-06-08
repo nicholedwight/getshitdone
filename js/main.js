@@ -12,11 +12,11 @@ $(document).ready(function(){
   });
 
 
-  var $container = $('.todo-list-items');
-  // init
-  $container.isotope({
-    // options
-    itemSelector: '.list-item',
-    layoutMode: 'masonry'
-  });
+  // var $container = $('.todo-list-items');
+  // // init
+  // $container.isotope({
+  //   // options
+  //   itemSelector: '.list-item',
+  //   layoutMode: 'masonry'
+  // });
 });
